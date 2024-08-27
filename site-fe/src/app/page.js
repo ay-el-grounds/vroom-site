@@ -214,22 +214,22 @@ export default function Home() {
           </a>
           , and <a href="https://warpcast.com/~/channel/drift">/drift</a>{" "}
           communities on Farcaster. It also includes collectors of car-related
-          collections like "
+          collections like &quot;
           <a href="https://opensea.io/collection/rustyrollers" target="_blank">
             Rusty Rollers
           </a>
-          " by baggy.industries, "
+          &quot; by baggy.industries, &quot;
           <a href="https://jaypegsautomart.com/" target="_blank">
             Jay Pegs Auto Mart
           </a>
-          ," and "
+          ,&quot; and &quot;
           <a
             href="https://opensea.io/collection/drive-dave-krugman"
             target="_blank"
           >
             DRIVE //
           </a>
-          ."
+          .&quot;
         </p>
         <div>
           <table>
@@ -252,7 +252,7 @@ export default function Home() {
                 <td>20%</td>
               </tr>
               <tr>
-                <td>"Creative Name" (Airdrop 3)</td>
+                <td>&quot;Creative Name&quot; (Airdrop 3)</td>
                 <td>Coming soon</td>
                 <td>25%</td>
               </tr>
