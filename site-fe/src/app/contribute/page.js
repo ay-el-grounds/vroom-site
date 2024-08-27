@@ -212,7 +212,7 @@ export default function Contribute() {
           </p>
           <p>
             In our universe, <span className={styles.vroomWord}>$VROOM</span>{" "}
-            transcends mere tokenization—it’s a cultural statement. It playfully
+            transcends mere tokenization—it&apos;s a cultural statement. It playfully
             critiques traditional industries while fostering a community-driven
             approach to redefining gasoline-powered love in the digital age.
           </p>
