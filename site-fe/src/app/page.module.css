@@ -1,0 +1,102 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  max-width: var(--max-width);
+  overflow: visible;
+}
+
+.menu {
+  position: sticky;
+  top: 0px;
+  height: 200px;
+  z-index: 1;
+  overflow: auto;
+}
+
+.navigation {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.note {
+  font-size:  0.7em;
+  text-align: right;
+  color: #d1d1d1;
+}
+
+.media img {
+  margin: 8px 0px;
+  max-width: 720px;
+}
+
+.block {
+  margin: 1em 0em;
+}
+
+.breakdown {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+}
+
+.buyButton {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+
+  margin: 16px;
+  padding: 20px 20px;
+
+  bottom: 0px;
+  right: 0px;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--white);
+  background-color: var(--rojo);
+
+  filter: drop-shadow(0 0 0.2rem rgba(0,0,0,0.4));
+  transition: all 0.25s ease;
+}
+
+.footer {
+  margin-top: 8em;
+  text-align: left;
+  font-size: 0.8em;
+}
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+
+}
+
+@media (prefers-reduced-motion) {
+
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
