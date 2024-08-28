@@ -66,6 +66,7 @@ table {
   overflow: hidden;
   color: var(--black);
   margin: 10px 0px;
+  border: var(--black) 1px solid;
 }
 
 th, td {

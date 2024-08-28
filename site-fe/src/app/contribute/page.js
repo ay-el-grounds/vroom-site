@@ -1,107 +1,42 @@
-import Image from "next/image";
+import Footer from "@/components/Footer";
 import styles from "../../app/page.module.css";
 import HoverBuy from "@/components/HoverBuy";
+import Navigation from "@/components/Navigation";
 
 export default function Contribute() {
   return (
     <main className={styles.main}>
       <nav>
-        <div className={styles.menu}>
-          <div className={styles.logo}>
-            <a
-              href="/
-          "
-            >
-              <img src="/vroom-logo-red.svg"></img>
-            </a>
-          </div>
-          <div className={styles.navigation}>
-            <div>
-              <a
-                href=""
-                target="_blank
-          "
-              >
-                Uniswap
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://warpcast.com/~/channel/cars"
-                target="_blank
-          "
-              >
-                /cars
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://basescan.org/address/0x1E6bA8BC42Bbd8C68Ca7E891bAc191F0e07B1d6F"
-                target="_blank
-          "
-              >
-                Basescan
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://zora.co"
-                target="_blank
-          "
-              >
-                Zora
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.are.na/brian-felix/vroom-e5x4pc22x14"
-                target="_blank"
-              >
-                Arena
-              </a>
-            </div>
-
-            {/* <div>
-          <a
-              href="https://zora.co"
-              target="_blank
-          "
-            >
-            Dexscreener
-            </a>
-        </div> */}
-          </div>
-        </div>
+        <Navigation />
       </nav>
       <HoverBuy />
-      <div className={`${styles.media}`}>
-        <img src="/tokyo-highway-roll.gif"></img>
-      </div>
-
       <div className={`${styles.block}`}>
-          <h2>Contribute</h2>
-          <p>
-            This guide outlines how to live and breathe{" "}
-            <span className={styles.vroomWord}>$VROOM</span>.
-          </p>
+        <h2>Contribute</h2>
+        <p>
+          This guide outlines how to live and breathe{" "}
+          <span className={styles.vroomWord}>$VROOM</span>.
+        </p>
       </div>
       <div className={styles.block}>
         <h3>Index</h3>
-        <ol>
+        <ol className={styles.index}>
           <li>
-            <a href="">
-              Emblem (soon)
-            </a>
+            <a href="">Branding Tenets</a>
           </li>
           <li>
-            <a href="">
-              Imagery (soon)
-            </a>
+            <a href="">Joining the Inner Donut</a>
           </li>
           <li>
-            <a href="">
-              Typography (soon)
-            </a>
+            <a href="">Assembly Line</a>
+          </li>
+          <li>
+            <a href="#emblem">Emblem (soon)</a>
+          </li>
+          <li>
+            <a href="#imagery">Imagery (soon)</a>
+          </li>
+          <li>
+            <a href="#typography">Typography (soon)</a>
           </li>
         </ol>
       </div>
@@ -147,7 +82,9 @@ export default function Contribute() {
           <h2>Joining the Inner Donut</h2>
         </div>
         <div className={styles.media}>
-          <img src="/race-track.png"></img>
+          <div className={styles.mediaImg}>
+            <img src="/race-track.png"></img>
+          </div>
           <div className={styles.note}>
             Fig 1. Guide for acquiring a Race Bib
           </div>
@@ -165,7 +102,7 @@ export default function Contribute() {
               amplifying your reach within the{" "}
               <span className={styles.vroomWord}>$VROOM</span> community. If
               your creation is selected for minting, you&apos;ll be invited to
-              ...
+              our Zora collection yadda yadda.
             </li>
             <li>
               Contributors with a Race Bib NFT become esteemed members of the
@@ -185,39 +122,60 @@ export default function Contribute() {
         </div>
       </div>
       <div className={`${styles.block}`}>
-        <div className={styles.heading}>
-          <h2>$VROOM on the Assembly Line</h2>
-        </div>
-        <div className={`${styles.copy}`}>
-          <p>
-            As the world embraces electric vehicles,{" "}
-            <span className={styles.vroomWord}>$VROOM</span> captures and
-            immortalizes the beautiful sounds in a deeply abstracted way on a
-            digital medium.
-          </p>
-          <p>
-            <span className={styles.vroomWord}>$VROOM</span> dropped on June
-            25th. In a month packed with automotive history (and also PRIDE).{" "}
-            <span className={styles.vroomWord}>$VROOM</span> celebrates
-            milestones like the first auto race, the premiere of The Fast and
-            the Furious franchise, the release of{" "}
-            <a href="https://www.imdb.com/title/tt0187078/" target="_blank">
-              Gone in Sixty Seconds
-            </a>
-            , and{" "}
-            <a href="https://www.imdb.com/title/tt0187078/" target="_blank">
-              Cars
-            </a>{" "}
-            (the Pixar film) — so as it turns out, cars are gay.
-          </p>
-          <p>
-            In our universe, <span className={styles.vroomWord}>$VROOM</span>{" "}
-            transcends mere tokenization—it&apos;s a cultural statement. It playfully
-            critiques traditional industries while fostering a community-driven
-            approach to redefining gasoline-powered love in the digital age.
-          </p>
-        </div>
+        <h2>$VROOM on the Assembly Line</h2>
+        <p>
+          As the world embraces electric vehicles,{" "}
+          <span className={styles.vroomWord}>$VROOM</span> captures and
+          immortalizes the beautiful sounds in a deeply abstracted way on a
+          digital medium.
+        </p>
+        <p>
+          <span className={styles.vroomWord}>$VROOM</span> dropped on June 25th.
+          In a month packed with automotive history (and also{" "}
+          <span className={styles.red}>P</span>
+          <span className={styles.yellow}>R</span>
+          <span className={styles.green}>I</span>
+          <span className={styles.blue}>D</span>
+          <span className={styles.violet}>E</span>).{" "}
+          <span className={styles.vroomWord}>$VROOM</span> celebrates milestones
+          like the first auto race, the premiere of The Fast and the Furious
+          franchise, the release of{" "}
+          <a href="https://www.imdb.com/title/tt0187078/" target="_blank">
+            Gone in Sixty Seconds
+          </a>
+          , and{" "}
+          <a href="https://www.imdb.com/title/tt0187078/" target="_blank">
+            Cars
+          </a>{" "}
+          (the Pixar film) — so as it turns out, cars are gay.
+        </p>
+        <p>
+          In our universe, <span className={styles.vroomWord}>$VROOM</span>{" "}
+          transcends mere tokenization—it&apos;s a cultural statement. It
+          playfully critiques traditional industries while fostering a
+          community-driven approach to redefining gasoline-powered love in the
+          digital age.
+        </p>
       </div>
+      <div className={`${styles.block}`}>
+        <h2>
+          <a name="emblem">Emblem</a>
+        </h2>
+        <p>🚧 Work in progress</p>
+      </div>
+      <div className={`${styles.block}`}>
+        <h2>
+          <a name="imagery">Imagery</a>
+        </h2>
+        <p>🚧 Work in progress</p>
+      </div>
+      <div className={`${styles.block}`}>
+        <h2>
+          <a name="typography">Typography</a>
+        </h2>
+        <p>🚧 Work in progress</p>
+      </div>
+      <Footer />
     </main>
   );
 }

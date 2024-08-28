@@ -15,15 +15,20 @@
   overflow: auto;
 }
 
-.navigation {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-}
-
 .note {
   font-size:  0.7em;
+  line-height: 1.2em;
   text-align: right;
   color: #d1d1d1;
+}
+
+.mediaImg {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: black 1px solid;
+  margin: 8px 0px;
+  background-color: white;
 }
 
 .media img {
@@ -35,16 +40,53 @@
   margin: 1em 0em;
 }
 
+.index li {
+  margin-bottom: 0px;
+  margin-left: 5px;
+}
+
+.red {
+  color: red;
+}
+
+.yellow {
+  color: orange;
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}
+
+.violet {
+  color: violet;
+}
+
 .breakdown {
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 10px;
 }
 
-.buyButton {
+.vroomWord {
+  font-weight: 900;
+  color: var(--rojo);
+}
+
+.engine {
+  font-size: 0.8em;
+  font-weight: 200;
+}
+
+.buy {
   position: fixed;
   width: 100px;
   height: 100px;
+  border-radius: 50%;
+  border: #d1d1d1 5px solid;
 
   margin: 16px;
   padding: 20px 20px;
@@ -56,6 +98,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  line-height: 1em;
 
   color: var(--white);
   background-color: var(--rojo);
@@ -80,15 +124,18 @@
 
 /* Mobile */
 @media (max-width: 700px) {
+  .breakdown {
+    grid-template-columns: 1fr;
+  }
+
+  .media img {
+    max-width: 80%;
+  }
 
 }
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
-
-}
-
-@media (prefers-color-scheme: dark) {
 
 }
 
