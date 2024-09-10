@@ -1,159 +1,305 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import HoverBuy from "@/components/HoverBuy";
-import GoogleChart from "@/components/GoogleCharts";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 export default function Home() {
-  const chartData = [
-    ["Desc.", "Supply"],
-    ["Initial LP", 10],
-    ["Airdrop 1", 15],
-    ["Airdrop 2", 20],
-    ["Airdrop 3", 25],
-    ["Ecosystem", 20],
-    ["LP Rewards", 10],
-  ];
-
-  const chartOptions = {
-    is3D: true,
-    slices: {
-      0: { color: "#ECEA5F" },
-      1: { color: "#D9261F" },
-      2: { color: "#D9261F" },
-      3: { color: "#D9261F" },
-      4: { color: "#ECEA5F" },
-      5: { color: "#2E3432" },
-    },
-    backgroundColor: "none",
-    legend: "none",
-    pieSliceText: "label",
-    pieSliceTextStyle: {
-      color: "#fffff1",
-    },
-    chartArea: {
-      height: "1000",
-    },
-    tooltip: {
-      textStyle: {
-        color: "#2E3432",
-        fontSize: "25",
-        fontName: "IBM Plex Mono",
-      },
-      text: "percentage",
-    },
-  };
-
+  
   return (
     <main className={styles.main}>
       <nav>
         <Navigation />
       </nav>
       <HoverBuy />
-      <div className={`${styles.media}`}>
-        <img src="ready-set-vroom.png"></img>
+      <div className={styles.media}>
+        <div className={styles.diagramImg}>
+          <img src="/001.png"></img>
+        </div>
+        <div className={styles.note}>Fig 1. Guide for acquiring a Race Bib</div>
       </div>
       <div className={`${styles.block}`}>
-        <h2>Introduction</h2>
         <p>
           Welcome to the official{" "}
-          <span className={styles.vroomWord}>$VROOM</span> tokenomics guide,
-          brought to you by{" "}
+          <span className={styles.vroomWord}>$VROOM</span> guide, brought to you
+          by{" "}
           <a href="https://aluminumgrounds.co" target="_blank">
             Aluminum Grounds
           </a>
-          . This manual will help you understand the inner workings of your
-          $VROOM token and how it powers our community.
+          .
+        </p>
+        <p>
+          <span className={styles.vroomWord}>$VROOM</span> is for those who love
+          to build and take pride in their creations. That&apos;s what
+          we&apos;re all revving our engines for, isn&apos;t it?
+        </p>
+        <p>
+          <span className={styles.vroomWord}>$VROOM</span>&apos;s mission is to
+          inspire a new generation of builders to get involved in on-chain
+          social, fuel creator grants, and bring more car content creators on to
+          platforms like Farcaster and Zora.
         </p>
       </div>
       <div className={`${styles.block}`}>
         <h2>Tokenomics (Operating Instructions for $VROOM)</h2>
-        <h3>Overview</h3>
+        <h3>Introduction</h3>
         <p>
           <span className={styles.vroomWord}>$VROOM</span> is a community-owned
-          artwork initiated by Aluminum Grounds. Upon launch, we minted ~472.9
-          billion tokens ($VROOM), with over n% available for open enrollment to
-          all automotive enthusiasts.
+          artwork initiated by Aluminum Grounds.{" "}
+          <span className={styles.vroomWord}>$VROOM</span> launched in June 2024
+          on the Base blockchain with an initial mint of ~472.9 billion tokens.
         </p>
         <p>
-          Launched in June of 2024 on Base with a staking reward on Rebase
-          shortly after and an Airdrop planned for the new year.
+          15% of the total supply is currently available for open enrollment
+          (via Rebase), inviting all builders to join the ride.
         </p>
-      </div>
-      <div className={`${styles.block} ${styles.breakdown}`}>
-        <div>
-          <h3>Breakdown</h3>
-          <p>
-            Our token allocation strategy builds off of the backs of the giants
-            before us (
-            <a href="https://buysomehigher.com" target="_blank">
-              $HIGHER
-            </a>
-            ,{" "}
-            <a href="https://enjoy.tech" target="_blank">
-              $ENJOY
-            </a>
-            ,{" "}
-            <a href="https://airport.gay" target="_blank">
-              $CRASH
-            </a>
-            ). It is planned to ensure a balanced distribution and support for
-            the $VROOM ecosystem.
-          </p>
-          <p>
-            Aluminum Grounds retains 5% of the supply as a fee for deploying
-            $VROOM. Additionally, there is a 1% inflation rate set to begin in
-            2028.
-          </p>
-        </div>
-        <div>
-          <GoogleChart
-            data={chartData}
-            options={chartOptions}
-            width="100%"
-            height="300px"
-          />
-          <div className={styles.note}>
-            *15% of Supply is in circulation after Airdrop 1 through the initial
-            LP, rewards, & the Rebase incentives.
-          </div>
-        </div>
-      </div>
-      <div>
-        <dl>
-          <dt>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              viewBox="0 0 24 24"
-            >
-              <g
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-              >
-                <circle cx="12" cy="12" r="10" />
-                <path d="M12 8v4m0 4h.01" />
-              </g>
-            </svg>
-          </dt>
-          <dd>
-            $VROOM is a memecoin. Our tokenomics provide clarity on
-            distribution, but always conduct your own research. This is not
-            financial advice!
-          </dd>
-        </dl>
+        <p>
+          Following our launch, we&apos;ve planned a race sequence to distribute {" "}
+          <span className={styles.vroomWord}>$VROOM</span>, including funding
+          through Rounds.wtf, and an airdrop scheduled for 2025.
+        </p>
       </div>
       <div className={`${styles.block}`}>
-        <h2>Airdrop</h2>
+        <h3>Starting Line</h3>
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th>Description</th>
+                <th>Status</th>
+                <th>Supply %</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Aluminum Grounds</td>
+                <td>Deployed</td>
+                <td>5%</td>
+              </tr>
+              <tr>
+                <td>Staking Programs on Rebase ($HIGHER, $CRASH)</td>
+                <td>Ignition Planned</td>
+                <td>25%</td>
+              </tr>
+              <tr>
+                <td>Liquidity Mining</td>
+                <td>Coming soon</td>
+                <td>20%</td>
+              </tr>
+              <tr>
+                <td>Creator Rewards (Rounds.wtf)</td>
+                <td>Planned</td>
+                <td>10%</td>
+              </tr>
+              <tr>
+                <td>Airdrop</td>
+                <td>Planned</td>
+                <td>10%</td>
+              </tr>
+              <tr>
+                <td>Grants for Builders of Cars</td>
+                <td>Planned</td>
+                <td>20%</td>
+              </tr>
+              <tr>
+                <td>Community Treasury</td>
+                <td>Circulating</td>
+                <td>10%</td>
+              </tr>
+            </tbody>
+          </table>
+          <div className={styles.note}>
+            *20% of initial supply is in circulation after Staking Programs.
+          </div>
+        </div>
+        <div className={styles.stage}>
+          <div className={styles.greenL}></div>
+          Aluminum Grounds (5%)
+        </div>
+        <ul>
+          <li>
+            Allocation: 5% (23.645 billion tokens) has already been allocated to
+            the Aluminum Grounds as a fee for writing and deploying the smart
+            contract.
+          </li>
+          <li>
+            Rationale: Aligns their long-term incentives with the project.
+          </li>
+        </ul>
+      </div>
+      <h3>Ignition Sequence</h3>
+      <div className={styles.stage}>
+        <div className={styles.greenL}></div>
+        Open Enrollment (25%)
+      </div>
+      <h4>Staking Rewards on Rebase</h4>
+      <p>
+        To secure your position on the track we've opened enrollment on Rebase.
+        Stake $HIGHER and $CRASH tokens to start earning{" "}
+        <span className={styles.vroomWord}>$VROOM</span>. This is your entry
+        point into the ecosystem, where early participation provides the
+        foundation for future rewards. our purpose here is to build synergy
+        across other tokens.
+      </p>
+      <ul>
+        <li>
+          Allocation: 25% (70.935 billion tokens) reserved for rewarding $HIGHER
+          and $CRASH stakers.
+        </li>
+      </ul>
+      <div className={styles.media}>
+        <div className={styles.diagramImg}>
+          <img src="/race-track.png"></img>
+        </div>
+        <div className={styles.note}>Fig 1. Guide for acquiring a Race Bib</div>
+      </div>
+
+      <div className={`${styles.block}`}>
+        <div className={styles.stage}>
+          <div className={styles.yellowL}></div>
+          Liquidity Complex (25%)
+        </div>
+        <h4>LP Rewards</h4>
+        <p>
+          Starting the liquidity mining stage, builders will have an opportunity
+          to stake their earned <span className={styles.vroomWord}>$VROOM</span>{" "}
+          through mining time trials or sprints.
+        </p>
+        <p>
+          Members who provide liquidity in VROOM/ETH and VROOM/USDC pairs will
+          earn rewards over time. The rewards will be distributed in proportion
+          to the amount and duration of liquidity provided.
+        </p>
+        <ul>
+          <li>Launch Date: TBD</li>
+          <li>
+            Allocation: 25% (118.225 billion tokens) allocated to liquidity
+            mining rewards for members who help provide liquidity to{" "}
+            <span className={styles.vroomWord}>$VROOM</span> pools.
+          </li>
+        </ul>
+        <div className={styles.stage}>
+          <div className={styles.redL}></div>
+          Rounds Chicane (10%)
+        </div>
+        <h4>Creator Rewards</h4>
+        <p>0% of allocated funds have been distributed</p>
+        <p>
+          Using Rounds.wtf, we will reward people who generate engaging content
+          centered around cars and automotive culture. Memes, AMAs, videos, and
+          original content will all be eligible for{" "}
+          <span className={styles.vroomWord}>$VROOM</span> rewards.
+        </p>
+        <p>
+          In addition to that, we will reward farcasters that onboard car
+          builders and conduct an AMA on their builds.
+        </p>
+        <ul>
+          <li>
+            Purpose: Empower content creators to fuel engagement and growth.
+          </li>
+          <li>
+            Allocation: 10% of the total{" "}
+            <span className={styles.vroomWord}>$VROOM</span> supply is dedicated
+            to creator rewards.
+          </li>
+        </ul>
+        <div className={styles.stage}>
+          <div className={styles.redL}></div>
+          Airdrop Straight (10%)
+        </div>
+        <h4></h4>
         <p>0% of allocated funds have been distributed.</p>
         <p>
+          This is where we floor it. We&apos;ll announce the parameters for
+          participation a month in advance, targeting specific Farcaster
+          channels and NFT collections.
+        </p>
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th>Community</th>
+                <th>Status</th>
+                <th>Priority</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <a href="https://jaypegsautomart.com/" target="_blank">
+                    Jay Pegs Auto Mart
+                  </a>
+                </td>
+                <td>Pending Approval</td>
+                <td>🛞🛞🛞🛞🛞</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://opensea.io/collection/rustyrollers"
+                    target="_blank"
+                  >
+                    Rusty Rollers
+                  </a>
+                </td>
+                <td>Pending Approval</td>
+                <td>🛞🛞🛞🛞🛞</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://opensea.io/collection/drive-dave-krugman"
+                    target="_blank"
+                  >
+                    &quo;DRIVE //&quo; by Dave Krugman
+                  </a>
+                </td>
+                <td>Pending Approval</td>
+                <td>🛞🛞🛞🛞🛞</td>
+              </tr>
+            </tbody>
+          </table>
+          <div className={styles.note}></div>
+        </div>
+        <div className={styles.stage}>
+          <div className={styles.redL}></div>
+          Car Building Grants (10%)
+        </div>
+        <h4></h4>
+        <p>
+          Supports innovation in car construction, funding real-world automotive
+          projects
+        </p>
+      </div>
+
+      <div className={`${styles.block}`}>
+        <h3>Supply Management</h3>
+      </div>
+      <p>
+        A community-driven governance model allows token holders to vote on
+        supply control, so <span className={styles.vroomWord}>$VROOM</span>{" "}
+        adapts to evolving market conditions and community needs.
+      </p>
+      <h4></h4>
+      <ul>
+        <li>
+          Inflation: A maximum of approximately 4.729 billion tokens can be
+          introduced annually. This is a community-driven event with allocations
+          aimed to sustain grants and reward programs, ensuring adaptability and
+          longevity.
+        </li>
+        <li>
+          Burn Rubber: Community events to burn tokens, counteracting inflation
+          effects.
+        </li>
+      </ul>
+      {/* 
+      <div className={`${styles.block}`}>
+        <h2>Airdrop</h2>
+        <p>
           The strategy here is to encourage unification of fans of
-          &apos;things&apos; with engines. This includes members of the{" "}
+          things with engines. This includes members of the{" "}
           <a href="https://warpcast.com/~/channel/f1" target="_blank">
             /f1
           </a>
@@ -168,60 +314,10 @@ export default function Home() {
           <a href="https://warpcast.com/~/channel/drift" target="_blank">
             /drift
           </a>{" "}
-          communities on Farcaster. It also includes collectors of car-related
-          collections like &quot;
-          <a href="https://opensea.io/collection/rustyrollers" target="_blank">
-            Rusty Rollers
-          </a>
-          &quot; by baggy.industries, &quot;
-          <a href="https://jaypegsautomart.com/" target="_blank">
-            Jay Pegs Auto Mart
-          </a>
-          ,&quot; and &quot;
-          <a
-            href="https://opensea.io/collection/drive-dave-krugman"
-            target="_blank"
-          >
-            DRIVE //
-          </a>
-          .&quot;
         </p>
-        <div>
-          <table>
-            <thead>
-              <tr>
-                <th>Description</th>
-                <th>Status</th>
-                <th>Supply %</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Open Enrollment Airdrop (Airdrop 1)</td>
-                <td>Planned Airdrop</td>
-                <td>15%</td>
-              </tr>
-              <tr>
-                <td>Pit Crew Airdrop (Airdrop 2)</td>
-                <td>Coming soon</td>
-                <td>20%</td>
-              </tr>
-              <tr>
-                <td>&quot;Creative Name&quot; (Airdrop 3)</td>
-                <td>Coming soon</td>
-                <td>25%</td>
-              </tr>
-            </tbody>
-          </table>
-          <div className={styles.note}>
-            *25% of Supply is in circulation after Airdrop 1 through the initial
-            LP, rewards, & the Airdrop
-          </div>
-        </div>
       </div>
       <div className={`${styles.block}`}>
         <h2>Liquidity & Rewards</h2>
-        <p>0% of allocated funds have been distributed</p>
         <div>
           <table>
             <thead>
@@ -269,8 +365,6 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.block}>
-        {" "}
-        {/* this needs to be revised for clarity */}
         <h2>Ecosystem</h2>
         <div>
           <table>
@@ -314,20 +408,7 @@ export default function Home() {
             LP, rewards, & the Airdrop
           </div>
         </div>
-      </div>
-      <div className={`${styles.block}`}>
-        <div className={styles.heading}>
-          <h2>Maintenance and Support</h2>
-        </div>
-        <div className={`${styles.copy}`}>
-          <p>
-            Keep your $VROOM token in peak condition by staying engaged with our
-            community.{" "}
-            <a href="/contribute">Regular participation and contribution</a>{" "}
-            will ensure you get the most out of your investment.
-          </p>
-        </div>
-      </div>
+      </div> */}
       <Footer />
     </main>
   );

@@ -10,6 +10,12 @@ export default function Contribute() {
         <Navigation />
       </nav>
       <HoverBuy />
+      <div className={styles.media}>
+        <div className={styles.mediaImg}>
+          <img src="/000580.jpg"></img>
+        </div>
+        <div className={styles.note}>Fig 1. Guide for acquiring a Race Bib</div>
+      </div>
       <div className={`${styles.block}`}>
         <h2>Contribute</h2>
         <p>
@@ -80,14 +86,6 @@ export default function Contribute() {
       <div className={`${styles.block}`}>
         <div className={styles.heading}>
           <h2>Joining the Inner Donut</h2>
-        </div>
-        <div className={styles.media}>
-          <div className={styles.mediaImg}>
-            <img src="/race-track.png"></img>
-          </div>
-          <div className={styles.note}>
-            Fig 1. Guide for acquiring a Race Bib
-          </div>
         </div>
         <div className={`${styles.block}`}>
           <ol>

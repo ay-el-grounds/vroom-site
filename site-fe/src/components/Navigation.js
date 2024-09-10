@@ -13,11 +13,11 @@ const Navigation = () => {
         </a>
       </div>
       <div className={styles.navigation}>
-        <a
-          href=""
+      <a
+          href="https://basescan.org/address/0x1E6bA8BC42Bbd8C68Ca7E891bAc191F0e07B1d6F"
           target="_blank"
         >
-          Uniswap
+          0x1E6bA8BC42Bbd8C68Ca7E891bAc191F0e07B1d6F
         </a>
         {sep}
         <a
@@ -28,24 +28,10 @@ const Navigation = () => {
         </a>
         {sep}
         <a
-          href="https://basescan.org/address/0x1E6bA8BC42Bbd8C68Ca7E891bAc191F0e07B1d6F"
-          target="_blank"
-        >
-          Basescan
-        </a>
-        {sep}
-        <a
           href="https://zora.co"
           target="_blank"
         >
           Zora
-        </a>
-        {sep}
-        <a
-          href="https://www.are.na/brian-felix/vroom-e5x4pc22x14"
-          target="_blank"
-        >
-          Arena
         </a>
         {sep}
 

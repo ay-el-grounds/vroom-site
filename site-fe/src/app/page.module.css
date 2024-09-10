@@ -22,13 +22,19 @@
   color: #d1d1d1;
 }
 
-.mediaImg {
+.diagramImg {
   display: flex;
   justify-content: center;
   align-content: center;
   border: black 1px solid;
   margin: 8px 0px;
   background-color: white;
+}
+
+.mediaImg {
+  display: flex;
+  align-content: center;
+  margin: 8px 0px;
 }
 
 .media img {
@@ -38,6 +44,14 @@
 
 .block {
   margin: 1em 0em;
+}
+
+.stage {
+  display: grid;
+  grid-template-columns: 15px 100%;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-top: 10px;
 }
 
 .index li {
@@ -65,6 +79,30 @@
   color: violet;
 }
 
+.redL {
+  height: 10px;
+  width: 10px;
+  border-radius: 50px;
+  background-color: red;
+  align-self: center;
+}
+
+.yellowL {
+  height: 10px;
+  width: 10px;
+  border-radius: 50px;
+  background-color: rgb(250, 234, 10);
+  align-self: center;
+}
+
+.greenL {
+  height: 10px;
+  width: 10px;
+  border-radius: 50px;
+  background-color: green;
+  align-self: center;
+}
+
 .breakdown {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -72,6 +110,8 @@
 }
 
 .vroomWord {
+  font-size: 1.2em;
+  line-height: 1em;
   font-weight: 900;
   color: var(--rojo);
 }

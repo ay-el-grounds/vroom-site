@@ -92,3 +92,16 @@ a {
   color: inherit;
   text-decoration: underline 2px dotted var(--rojo);
 }
+
+h2 {
+  font-size: 1.6em;
+  line-height: 1em;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+h3 {
+  font-size: 1.3em;
+  font-weight: 500;
+  margin-top: 10px;
+}
