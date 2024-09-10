@@ -5,7 +5,6 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 export default function Home() {
-  
   return (
     <main className={styles.main}>
       <nav>
@@ -54,13 +53,33 @@ export default function Home() {
           (via Rebase), inviting all builders to join the ride.
         </p>
         <p>
-          Following our launch, we&apos;ve planned a race sequence to distribute {" "}
+          Following our launch, we&apos;ve planned a race sequence to distribute{" "}
           <span className={styles.vroomWord}>$VROOM</span>, including funding
           through Rounds.wtf, and an airdrop scheduled for 2025.
         </p>
       </div>
       <div className={`${styles.block}`}>
         <h3>Starting Line</h3>
+        <p>
+          Our token allocation strategy builds off of the backs of the giants
+          before us (
+          <a
+            href="https://buysomehigher.com"
+            target="_blank"
+            previewlistener="true"
+          >
+            $HIGHER
+          </a>
+          ,{" "}
+          <a href="https://enjoy.tech" target="_blank" previewlistener="true">
+            $ENJOY
+          </a>
+          ,{" "}
+          <a href="https://airport.gay" target="_blank" previewlistener="true">
+            $CRASH
+          </a>
+          ).
+        </p>
         <div>
           <table>
             <thead>
@@ -134,7 +153,7 @@ export default function Home() {
       </div>
       <h4>Staking Rewards on Rebase</h4>
       <p>
-        To secure your position on the track we've opened enrollment on Rebase.
+        To secure your position on the track we&apos;ve opened enrollment on Rebase.
         Stake $HIGHER and $CRASH tokens to start earning{" "}
         <span className={styles.vroomWord}>$VROOM</span>. This is your entry
         point into the ecosystem, where early participation provides the
