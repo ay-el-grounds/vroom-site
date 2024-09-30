@@ -103,12 +103,12 @@ export default function Home() {
               <tr>
                 <td>Liquidity Mining</td>
                 <td>Coming soon</td>
-                <td>20%</td>
+                <td>25%</td>
               </tr>
               <tr>
                 <td>Creator Rewards (Rounds.wtf)</td>
                 <td>Planned</td>
-                <td>10%</td>
+                <td>15%</td>
               </tr>
               <tr>
                 <td>Airdrop</td>
@@ -116,9 +116,9 @@ export default function Home() {
                 <td>10%</td>
               </tr>
               <tr>
-                <td>Grants for Builders of Cars</td>
+                <td>Grants for Builders</td>
                 <td>Planned</td>
-                <td>20%</td>
+                <td>10%</td>
               </tr>
               <tr>
                 <td>Community Treasury</td>
@@ -128,7 +128,7 @@ export default function Home() {
             </tbody>
           </table>
           <div className={styles.note}>
-            *20% of initial supply is in circulation after Staking Programs.
+            *25% of initial supply is in circulation after Staking Programs.
           </div>
         </div>
         <div className={styles.stage}>
@@ -137,8 +137,8 @@ export default function Home() {
         </div>
         <ul>
           <li>
-            Allocation: 5% (23.645 billion tokens) has already been allocated to
-            the Aluminum Grounds as a fee for writing and deploying the smart
+            Allocation: 5% (~23.647 billion tokens) has already been allocated
+            to the Aluminum Grounds as a fee for writing and deploying the smart
             contract.
           </li>
           <li>
@@ -153,8 +153,8 @@ export default function Home() {
       </div>
       <h4>Staking Rewards on Rebase</h4>
       <p>
-        To secure your position on the track we&apos;ve opened enrollment on Rebase.
-        Stake $HIGHER and $CRASH tokens to start earning{" "}
+        To secure your position on the track we&apos;ve opened enrollment on
+        Rebase. Stake $HIGHER and $CRASH tokens to start earning{" "}
         <span className={styles.vroomWord}>$VROOM</span>. This is your entry
         point into the ecosystem, where early participation provides the
         foundation for future rewards. our purpose here is to build synergy
@@ -162,8 +162,8 @@ export default function Home() {
       </p>
       <ul>
         <li>
-          Allocation: 25% (70.935 billion tokens) reserved for rewarding $HIGHER
-          and $CRASH stakers.
+          Allocation: 25% (~118.239 billion tokens) reserved for rewarding
+          $HIGHER and $CRASH stakers.
         </li>
       </ul>
       <div className={styles.media}>
@@ -179,6 +179,7 @@ export default function Home() {
           Liquidity Complex (25%)
         </div>
         <h4>LP Rewards</h4>
+        <p>0% of allocated funds have been distributed</p>
         <p>
           Starting the liquidity mining stage, builders will have an opportunity
           to stake their earned <span className={styles.vroomWord}>$VROOM</span>{" "}
@@ -192,14 +193,14 @@ export default function Home() {
         <ul>
           <li>Launch Date: TBD</li>
           <li>
-            Allocation: 25% (118.225 billion tokens) allocated to liquidity
+            Allocation: 25% (~118.239 billion tokens) allocated to liquidity
             mining rewards for members who help provide liquidity to{" "}
             <span className={styles.vroomWord}>$VROOM</span> pools.
           </li>
         </ul>
         <div className={styles.stage}>
           <div className={styles.redL}></div>
-          Rounds Chicane (10%)
+          Rounds Chicane (15%)
         </div>
         <h4>Creator Rewards</h4>
         <p>0% of allocated funds have been distributed</p>
@@ -218,9 +219,8 @@ export default function Home() {
             Purpose: Empower content creators to fuel engagement and growth.
           </li>
           <li>
-            Allocation: 10% of the total{" "}
-            <span className={styles.vroomWord}>$VROOM</span> supply is dedicated
-            to creator rewards.
+            Allocation: 15% (~70.943 billion tokens) allocated to creator
+            rewards.
           </li>
         </ul>
         <div className={styles.stage}>
@@ -271,7 +271,31 @@ export default function Home() {
                     href="https://opensea.io/collection/drive-dave-krugman"
                     target="_blank"
                   >
-                    &quo;DRIVE //&quo; by Dave Krugman
+                    DRIVE // by Dave Krugman
+                  </a>
+                </td>
+                <td>Pending Approval</td>
+                <td>🛞🛞🛞🛞🛞</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://warpcast.com/~/channel/unique-vehicles"
+                    target="_blank"
+                  >
+                    /unique-vehicles on Farcaster
+                  </a>
+                </td>
+                <td>Pending Approval</td>
+                <td>🛞🛞🛞🛞🛞</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://warpcast.com/~/channel/drift/default"
+                    target="_blank"
+                  >
+                    /drift on Farcaster
                   </a>
                 </td>
                 <td>Pending Approval</td>
@@ -283,18 +307,16 @@ export default function Home() {
         </div>
         <div className={styles.stage}>
           <div className={styles.redL}></div>
-          Car Building Grants (10%)
+          Builder Grants (10%)
         </div>
         <h4></h4>
         <p>
           Supports innovation in car construction, funding real-world automotive
-          projects
+          projects as well as onboarding content creators that focus on car content.
         </p>
       </div>
-
       <div className={`${styles.block}`}>
         <h3>Supply Management</h3>
-      </div>
       <p>
         A community-driven governance model allows token holders to vote on
         supply control, so <span className={styles.vroomWord}>$VROOM</span>{" "}
@@ -313,6 +335,7 @@ export default function Home() {
           effects.
         </li>
       </ul>
+      </div>
       {/* 
       <div className={`${styles.block}`}>
         <h2>Airdrop</h2>
