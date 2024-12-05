@@ -170,7 +170,7 @@ export default function Home() {
         <div className={styles.diagramImg}>
           <img src="/race-track.png"></img>
         </div>
-        <div className={styles.note}>Fig 1. How to get around the 'track' most efficiently</div>
+        <div className={styles.note}>Fig 1. How to get around the &apos;track&apos; most efficiently</div>
       </div>
 
       <div className={`${styles.block}`}>
