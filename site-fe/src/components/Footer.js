@@ -3,7 +3,7 @@ import styles from "../app/page.module.css";
 const Footer = () => {
   return (
     <div className={styles.footer}>
-        <div className={`${styles.communityGridItem} ${styles.uniswap}`}>
+        {/* <div className={`${styles.communityGridItem} ${styles.uniswap}`}>
           <div>
             <a
               href=""
@@ -13,7 +13,7 @@ const Footer = () => {
               Uniswap
             </a>
           </div>
-        </div>
+        </div> */}
         <div className={`${styles.communityGridItem} ${styles.warpcast}`}>
           <a
             href="https://warpcast.com/~/channel/cars"

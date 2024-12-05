@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import HoverBuy from "@/components/HoverBuy";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import HoverStake from "@/components/HoverStake";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <Navigation />
       </nav>
       <HoverBuy />
+      <HoverStake />
       <div className={styles.media}>
         <div className={styles.diagramImg}>
           <img src="/001.png"></img>
@@ -50,7 +52,7 @@ export default function Home() {
         </p>
         <p>
           15% of the total supply is currently available for open enrollment
-          (via Rebase), inviting all builders to join the ride.
+          (via <a href="https://rebase.finance" target="_blank">Rebase</a>), inviting all builders to join the ride.
         </p>
         <p>
           Following our launch, we&apos;ve planned a race sequence to distribute{" "}
@@ -92,37 +94,37 @@ export default function Home() {
             <tbody>
               <tr>
                 <td>Aluminum Grounds</td>
-                <td>Deployed</td>
+                <td><span className={styles.blueButt}>Deployed</span></td>
                 <td>5%</td>
               </tr>
               <tr>
                 <td>Staking Programs on Rebase ($HIGHER, $CRASH)</td>
-                <td>Ignition Planned</td>
+                <td><span className={styles.greenButt}>Circulating</span></td>
                 <td>25%</td>
               </tr>
               <tr>
                 <td>Liquidity Mining</td>
-                <td>Coming soon</td>
+                <td><span className={styles.redButt}>Coming soon</span></td>
                 <td>25%</td>
               </tr>
               <tr>
                 <td>Creator Rewards (Rounds.wtf)</td>
-                <td>Planned</td>
+                <td><span className={styles.yellowButt}>Testing</span></td>
                 <td>15%</td>
               </tr>
               <tr>
                 <td>Airdrop</td>
-                <td>Planned</td>
+                <td><span className={styles.neutralButt}>Planned</span></td>
                 <td>10%</td>
               </tr>
               <tr>
                 <td>Grants for Builders</td>
-                <td>Planned</td>
+                <td><span className={styles.neutralButt}>Planned</span></td>
                 <td>10%</td>
               </tr>
               <tr>
                 <td>Community Treasury</td>
-                <td>Circulating</td>
+                <td><span className={styles.greenButt}>Circulating</span></td>
                 <td>10%</td>
               </tr>
             </tbody>
@@ -132,8 +134,7 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.stage}>
-          <div className={styles.greenL}></div>
-          Aluminum Grounds (5%)
+          Aluminum Grounds (5%) <span className={styles.blueButt}>Deployed</span>
         </div>
         <ul>
           <li>
@@ -148,8 +149,7 @@ export default function Home() {
       </div>
       <h3>Ignition Sequence</h3>
       <div className={styles.stage}>
-        <div className={styles.greenL}></div>
-        Open Enrollment (25%)
+        Open Enrollment (25%) <span className={styles.greenButt}>Circulating</span>
       </div>
       <h4>Staking Rewards on Rebase</h4>
       <p>
@@ -170,13 +170,12 @@ export default function Home() {
         <div className={styles.diagramImg}>
           <img src="/race-track.png"></img>
         </div>
-        <div className={styles.note}>Fig 1. Guide for acquiring a Race Bib</div>
+        <div className={styles.note}>Fig 1. How to get around the 'track' most efficiently</div>
       </div>
 
       <div className={`${styles.block}`}>
         <div className={styles.stage}>
-          <div className={styles.yellowL}></div>
-          Liquidity Complex (25%)
+          Liquidity Complex (25%) <span className={styles.neutralButt}>Planned</span>
         </div>
         <h4>LP Rewards</h4>
         <p>0% of allocated funds have been distributed</p>
@@ -199,8 +198,7 @@ export default function Home() {
           </li>
         </ul>
         <div className={styles.stage}>
-          <div className={styles.redL}></div>
-          Rounds Chicane (15%)
+          Rounds Chicane (15%) <span className={styles.yellowButt}>Testing</span>
         </div>
         <h4>Creator Rewards</h4>
         <p>0% of allocated funds have been distributed</p>
@@ -224,8 +222,7 @@ export default function Home() {
           </li>
         </ul>
         <div className={styles.stage}>
-          <div className={styles.redL}></div>
-          Airdrop Straight (10%)
+          Airdrop Straight (10%) <span className={styles.neutralButt}>Planning</span>
         </div>
         <h4></h4>
         <p>0% of allocated funds have been distributed.</p>
@@ -240,7 +237,6 @@ export default function Home() {
               <tr>
                 <th>Community</th>
                 <th>Status</th>
-                <th>Priority</th>
               </tr>
             </thead>
             <tbody>
@@ -250,8 +246,7 @@ export default function Home() {
                     Jay Pegs Auto Mart
                   </a>
                 </td>
-                <td>Pending Approval</td>
-                <td>🛞🛞🛞🛞🛞</td>
+                <td><span className={styles.yellowButt}>Pending Approval</span></td>
               </tr>
               <tr>
                 <td>
@@ -262,8 +257,7 @@ export default function Home() {
                     Rusty Rollers
                   </a>
                 </td>
-                <td>Pending Approval</td>
-                <td>🛞🛞🛞🛞🛞</td>
+                <td><span className={styles.yellowButt}>Pending Approval</span></td>
               </tr>
               <tr>
                 <td>
@@ -274,8 +268,7 @@ export default function Home() {
                     DRIVE // by Dave Krugman
                   </a>
                 </td>
-                <td>Pending Approval</td>
-                <td>🛞🛞🛞🛞🛞</td>
+                <td><span className={styles.yellowButt}>Pending Approval</span></td>
               </tr>
               <tr>
                 <td>
@@ -286,8 +279,7 @@ export default function Home() {
                     /unique-vehicles on Farcaster
                   </a>
                 </td>
-                <td>Pending Approval</td>
-                <td>🛞🛞🛞🛞🛞</td>
+                <td><span className={styles.yellowButt}>Pending Approval</span></td>
               </tr>
               <tr>
                 <td>
@@ -298,16 +290,14 @@ export default function Home() {
                     /drift on Farcaster
                   </a>
                 </td>
-                <td>Pending Approval</td>
-                <td>🛞🛞🛞🛞🛞</td>
+                <td><span className={styles.yellowButt}>Pending Approval</span></td>
               </tr>
             </tbody>
           </table>
           <div className={styles.note}></div>
         </div>
         <div className={styles.stage}>
-          <div className={styles.redL}></div>
-          Builder Grants (10%)
+          Builder Grants (10%) <span className={styles.neutralButt}>Planning</span>
         </div>
         <h4></h4>
         <p>

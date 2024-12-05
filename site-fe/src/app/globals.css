@@ -8,6 +8,9 @@
   --white: #fffff8;
   --black: #111111;
   --rojo: #D9261F;
+
+  --yellow-light: #EEEFCB;
+  --yellow-dark: #ECEB5E;
 }
 
 * {
@@ -91,6 +94,11 @@ tbody tr:nth-child(even) {
 a {
   color: inherit;
   text-decoration: underline 2px dotted var(--rojo);
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  background-color: var(--yellow-dark);
 }
 
 h2 {
@@ -101,7 +109,17 @@ h2 {
 }
 
 h3 {
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-weight: 500;
-  margin-top: 10px;
+  color: var(--rojo);
+  margin-top: 20px;
+  text-transform: lowercase;
+}
+
+h3::before {
+  content: "⧗ ";
+}
+
+h3::after {
+  content: " ⊗";
 }
