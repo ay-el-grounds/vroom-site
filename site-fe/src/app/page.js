@@ -66,7 +66,7 @@ export default function Home() {
           Our token allocation strategy builds off of the backs of the giants
           before us (
           <a
-            href="https://buysomehigher.com"
+            href="https://higher.party"
             target="_blank"
             previewlistener="true"
           >
@@ -291,6 +291,14 @@ export default function Home() {
                   </a>
                 </td>
                 <td><span className={styles.yellowButt}>Pending Approval</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://cvrdcrs.com/" target="_blank">
+                  CVRD by Karin Apollonia Mueller and Peter Nitsch
+                  </a>
+                </td>
+                <td><span className={styles.yellowButt}>Researching</span></td>
               </tr>
             </tbody>
           </table>
