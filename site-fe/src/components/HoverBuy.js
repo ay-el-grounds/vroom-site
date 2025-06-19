@@ -1,4 +1,4 @@
-import styles from "../app/page.module.css";
+import styles from "./HoverBuy.module.css";
 
 const HoverBuy = () => {
   return (
@@ -6,7 +6,7 @@ const HoverBuy = () => {
       <div className={styles.buy}>
         <p>
           <span className={styles.engine}>ENGINE</span>
-          <br></br>
+          <br />
           START
         </p>
       </div>

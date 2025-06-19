@@ -4,6 +4,7 @@ import HoverBuy from "@/components/HoverBuy";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import HoverStake from "@/components/HoverStake";
+import Radio from "@/components/Radio";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       </nav>
       <HoverBuy />
       <HoverStake />
+      <Radio />
       <div className={styles.media}>
         <div className={styles.diagramImg}>
           <img src="/001.png"></img>

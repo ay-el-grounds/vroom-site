@@ -14,6 +14,13 @@ const Footer = () => {
             </a>
           </div>
         </div> */}
+      <p className={styles.fineprint}>
+        Note that purchasing cryptocurrency involves inherent risks, as the
+        value of digital assets can be highly volatile and subject to market
+        fluctuations. This token is not a guarantee of financial return or
+        investment success, and you should only invest after conducting your own
+        research and what you can afford to lose.
+      </p>
       <div className={`${styles.communityGridItem} ${styles.warpcast}`}>
         <a
           href="https://warpcast.com/~/channel/cars"

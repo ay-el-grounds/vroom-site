@@ -11,6 +11,8 @@
 
   --yellow-light: #EEEFCB;
   --yellow-dark: #ECEB5E;
+
+  --purple: #e228a7;
 }
 
 * {
@@ -40,7 +42,7 @@ p {
 ol,
 ul,
 li {
-  margin-left: 2em;
+  margin-left: 1.4em;
   margin-bottom: 1.6em;
 }
 
@@ -99,27 +101,70 @@ a {
 
 a:hover {
   background-color: var(--yellow-dark);
+  cursor: crosshair;
+}
+
+h1 {
+  font-weight: 400;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  font-size: 3.2rem;
+  line-height: 1;
 }
 
 h2 {
-  font-size: 1.6em;
-  line-height: 1em;
-  font-weight: 600;
-  margin-top: 10px;
+  font-weight: 500;
+  margin-top: 2.1rem;
+  margin-bottom: 1.4rem;
+  font-size: 2.2rem;
+  line-height: 1;
 }
 
 h3 {
-  font-size: 1.5em;
-  font-weight: 500;
   color: var(--rojo);
-  margin-top: 20px;
-  text-transform: lowercase;
+
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-top: 2rem;
+  margin-bottom: 1.4rem;
+  line-height: 1;
 }
 
-h3::before {
-  content: "⧗ ";
+blockquote {
+  margin-left: 1.5em;
+  margin-right: 0em;
+
+  font-size: 1.4rem;
+
 }
 
-h3::after {
-  content: " ⊗";
+blockquote p,
+blockquote footer {
+  width: 100%;
+}
+
+blockquote p {
+  width: 55%;
+  margin-right: 40px;
+}
+
+blockquote footer {
+  width: 55%;
+  font-size: 1.1rem;
+  text-align: right;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  width: 55%;
+  border: 0;
+  border-top: 1px solid var(--yellow-dark);
+  margin: 1em 0;
+  padding: 0;
+}
+
+section {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }

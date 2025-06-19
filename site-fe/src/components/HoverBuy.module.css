@@ -1,0 +1,31 @@
+.engine {
+  font-size: 0.8em;
+  font-weight: 200;
+}
+
+.buy {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: #d1d1d1 5px solid;
+
+  margin: 16px;
+  padding: 20px 20px;
+
+  bottom: 0px;
+  right: 0px;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1em;
+
+  color: var(--white);
+  background-color: var(--rojo);
+
+  filter: drop-shadow(0 0 0.2rem rgba(0,0,0,0.4));
+  transition: all 0.25s ease;
+}

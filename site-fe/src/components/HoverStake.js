@@ -1,4 +1,4 @@
-import styles from "../app/page.module.css";
+import styles from "./HoverStake.module.css";
 
 const HoverStake = () => {
   return (

@@ -1,0 +1,119 @@
+.radio {
+  position: fixed;
+  right: 1.2em;
+  bottom: 255px;
+  height: auto;
+  width: 25vw;
+  overflow: hidden;
+  z-index: 30;
+
+  border-radius: 32px;
+  border: #d1d1d1 5px solid;
+
+  background-color: var(--purple);
+  transition: all 0.3s ease;
+
+  filter: drop-shadow(0 0 0.75rem rgba(0,0,0,0.1));
+}
+  
+.radio:hover {
+  overflow-y: auto;
+}
+
+.radio audio {
+  position: sticky;
+  bottom: 0px;
+  width: 100%;
+}
+
+ul.jukebox {
+  margin: 1em 0px 2em;
+}
+
+li.jukebox {
+  list-style: none;
+  margin: 15px 10px;
+}
+
+
+.jukeboxSongs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  font-family: var(--font);
+  color: var(--white);
+  background-color: rgba(0,0,0,0);
+}
+
+button.jukeboxSongs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: none;
+
+  cursor: pointer;
+}
+
+.indSong {
+  display: flex;
+  align-items: center;
+}
+
+.indSong img {
+  width: 5%;
+  margin-right: 10px;
+  border-radius: 20%;
+}
+
+.indSongText {
+  text-align: left;
+}
+
+.chevronButton {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background: rgba(255,255,255,0.1);
+  border: none;
+  cursor: pointer;
+  z-index: 40;
+  padding: 4px;
+}
+
+.radioMinimized {
+  height: 48px !important;
+  min-height: 0 !important;
+  overflow: hidden !important;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 32px;
+  width: 10%;
+  transition: all 0.5s;
+}
+
+
+.minimizedBar {
+  flex: 1;
+  text-align: right;
+  padding-right: 50px;
+  font-family: var(--font);
+  color: var(--white);
+  background: none;
+  font-size: 1rem;
+}
+
+
+
+
+@media (max-width: 700px) {
+  .radio {
+    width: 90vw;
+  }
+  .radioMinimized {
+    width: 33vw;
+  }
+}
