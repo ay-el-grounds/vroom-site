@@ -23,7 +23,7 @@ const Footer = () => {
       </p>
       <div className={`${styles.communityGridItem} ${styles.warpcast}`}>
         <a
-          href="https://warpcast.com/~/channel/cars"
+          href="https://farcaster.xyz/~/channel/cars"
           target="_blank
           "
         >
@@ -32,7 +32,7 @@ const Footer = () => {
       </div>
       <div className={`${styles.communityGridItem} ${styles.warpcast}`}>
         <a
-          href="https://warpcast.com/~/channel/unique-vehicles"
+          href="https://farcaster.xyz/~/channel/unique-vehicles"
           target="_blank
           "
         >
@@ -41,7 +41,7 @@ const Footer = () => {
       </div>
       <div className={`${styles.communityGridItem} ${styles.warpcast}`}>
         <a
-          href="https://warpcast.com/~/channel/drift"
+          href="https://farcaster.xyz/~/channel/drift"
           target="_blank
           "
         >

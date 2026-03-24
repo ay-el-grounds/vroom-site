@@ -275,7 +275,7 @@ export default function Home() {
               <tr>
                 <td>
                   <a
-                    href="https://warpcast.com/~/channel/unique-vehicles"
+                    href="https://farcaster.xyz/~/channel/unique-vehicles"
                     target="_blank"
                   >
                     /unique-vehicles on Farcaster
@@ -286,7 +286,7 @@ export default function Home() {
               <tr>
                 <td>
                   <a
-                    href="https://warpcast.com/~/channel/drift/default"
+                    href="https://farcaster.xyz/~/channel/drift/default"
                     target="_blank"
                   >
                     /drift on Farcaster
@@ -342,18 +342,18 @@ export default function Home() {
         <p>
           The strategy here is to encourage unification of fans of
           things with engines. This includes members of the{" "}
-          <a href="https://warpcast.com/~/channel/f1" target="_blank">
+          <a href="https://farcaster.xyz/~/channel/f1" target="_blank">
             /f1
           </a>
           ,{" "}
           <a
-            href="https://warpcast.com/~/channel/velocityvibes"
+            href="https://farcaster.xyz/~/channel/velocityvibes"
             target="_blank"
           >
             /velocity vibes
           </a>
           , and{" "}
-          <a href="https://warpcast.com/~/channel/drift" target="_blank">
+          <a href="https://farcaster.xyz/~/channel/drift" target="_blank">
             /drift
           </a>{" "}
         </p>

@@ -18,7 +18,7 @@ const Navigation = () => {
           0x1E6bA8BC42Bbd8C68Ca7E891bAc191F0e07B1d6F
         </a>
         {sep}
-        <a href="https://warpcast.com/~/channel/cars" target="_blank">
+        <a href="https://farcaster.xyz/~/channel/cars" target="_blank">
           /cars
         </a>
         {sep}
@@ -30,13 +30,13 @@ const Navigation = () => {
         </a>
         {sep} */}
         <a
-          href="https://warpcast.com/~/channel/unique-vehicles"
+          href="https://farcaster.xyz/~/channel/unique-vehicles"
           target="_blank"
         >
           /unique-vehicles
         </a>
         {sep}
-        <a href="https://warpcast.com/~/channel/drift" target="_blank">
+        <a href="https://farcaster.xyz/~/channel/drift" target="_blank">
           /drift
         </a>
         {sep}
